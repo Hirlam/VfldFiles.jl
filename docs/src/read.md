@@ -12,10 +12,11 @@ myshow(df) = show(df,truncate=10,show_row_number=false, display_size = (21, 90),
 ```@example 1
 using VfldFiles, Glob
 
-vfldfiles = glob("vfld*",VfldFiles.MEPS_prod )
+vfldfile = "assets/vfldMEPS_prodmbr000201902170027"
 
-@show basename(vfldfiles[1])
-df = read_v(vfldfiles[1], select=[:ID,:TT])
+@show basename(vfldfile)
+
+df = read_v(vfldfile, select=[:ID,:TT])
 
 myshow(df) #hide
 ```
@@ -27,7 +28,7 @@ Or use `reduce`  and `vcat` to vertically concatenate dataframes.
 Note in  `read_v.` the `.` will broadcast the `read_v` function over the `vfldfiles` array
 
 ```@example 1 
-df = reduce(vcat, read_v.(vfldfiles,select=[:ID,:TT]))
+df = reduce(vcat, read_v.([vfldfile vfldfile],select=[:ID,:TT]))
 
 myshow(df) #hide
 ```

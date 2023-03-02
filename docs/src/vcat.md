@@ -6,11 +6,9 @@
 myshow(df) = show(df,truncate=10,show_row_number=false, display_size = (21, 90),maximum_columns_width = 15) 
 using VfldFiles, Glob
 
-vfldfiles = glob("vfld*",VfldFiles.MEPS_prod )
-vobsfiles = glob("vobs*",VfldFiles.obs )
+vfldfile = "assets/vfldMEPS_prodmbr000201902170027" 
+vobsfile = "assets/vobs2019022015"
 
-vfldfile = vfldfiles[1]
-vobsfile = vobsfiles[1]
 ```
 
 To vertically concatenated dataframes use 

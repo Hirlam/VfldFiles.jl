@@ -1,21 +1,21 @@
 # Inner joins 
 
 
-```@setup 2
-myshow(df) = show(df,truncate=10,show_row_number=false, display_size = (21, 90),maximum_columns_width = 15) 
-```
 
-```@example 2
+```@setup 2 
+
+myshow(df) = show(df,truncate=10,show_row_number=false, display_size = (21, 90),maximum_columns_width = 15) 
+
 using VfldFiles, Glob, DataFrames
 
-vobsfiles = glob("vobs*",VfldFiles.obs)
-vfldfiles = glob("vfld*",VfldFiles.MEPS_prod)
+vobsfiles = "assets/vfldMEPS_prodmbr000201902170027"
+vfldfiles = "assets/vobs2019022015"
 nothing #hide
 ```
 
 ```@example 2 
-vobs_df = reduce(vcat, read_v.(vobsfiles,select=[:ID, :TT]))
-vfld_df = reduce(vcat, read_v.(vfldfiles,select=[:ID, :TT])) 
+vobs_df =  read_v(vobsfiles,select=[:ID, :TT])
+vfld_df =  read_v(vfldfiles,select=[:ID, :TT]) 
 nothing #hide
 ```
 
