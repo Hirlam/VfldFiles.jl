@@ -1,5 +1,7 @@
 # VfldFiles.jl
 
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://hirlam.github.io/VfldFiles.jl/dev/)
+
 VfldFiles.jl is a small julia package to read vobs and vfld files  
 
 
@@ -37,4 +39,6 @@ Note: keep the user depot on `$PERM/juliadepot` or other place with large enough
 julia> df = read_v(filename,select=[:ID,:TT])
 ```
 
-See multithreaded [example](docs/src/multithreading.md) how to run on a single node on Atos (reads approximately 4000 vfld files per second)  
+See multithreaded [example](https://hirlam.github.io/VfldFiles.jl/dev/multithreading/) how to run on a single node on Atos (reads approximately 4000 vfld files per second)  
+
+[Documentation](https://hirlam.github.io/VfldFiles.jl/)
