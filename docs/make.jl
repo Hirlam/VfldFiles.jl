@@ -22,6 +22,6 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/Hirlam/VfldFiles.jl.git"
+    repo = "github.com/Hirlam/VfldFiles.jl.git",
     push_preview=true
 )
