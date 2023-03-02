@@ -6,3 +6,5 @@ VfldFiles = "2db2b2a4-6bcf-4003-86c8-d3c8382638cd"
 
 [compat]
 DataFrames = "1"
+Glob = "1"
+Documenter = "0.27"
