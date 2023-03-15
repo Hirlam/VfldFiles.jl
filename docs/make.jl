@@ -13,6 +13,7 @@ makedocs(
     format = format,
     pages = [
         "index.md"
+        "install.md"
         "read.md"
         "innerjoin.md"
         "vcat.md"
