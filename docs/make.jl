@@ -24,4 +24,4 @@ makedocs(
     ] 
 )
 
-deploydocs(repo = "github.com/Hirlam/VfldFiles.git")
+deploydocs(repo = "github.com/Hirlam/VfldFiles.jl.git")
