@@ -5,6 +5,7 @@ function read_v(fname::AbstractString; select=[])
 
     io = open(fname)
     nt = read_header(io)
+    select = isempty(select) ? nt.header : select
     df = read_synop(io; select=select, nt...)
 
     # continue reading TEMP here 
