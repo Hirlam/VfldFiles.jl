@@ -1,7 +1,10 @@
 using Documenter, VfldFiles
 
 
-format = Documenter.HTML(prettyurls = get(ENV, "CI", nothing) == "true") 
+format = Documenter.HTML(
+             prettyurls = get(ENV, "CI", nothing) == "true",
+             analytics = "G-28HZH6GXHN"
+         ) 
 
 
 
@@ -21,7 +24,4 @@ makedocs(
     ] 
 )
 
-deploydocs(
-    repo = "github.com/Hirlam/VfldFiles.jl.git",
-    push_preview=true
-)
+deploydocs(repo = "github.com/Hirlam/VfldFiles.git")
