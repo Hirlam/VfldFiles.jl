@@ -12,7 +12,7 @@ makedocs(
     sitename = "VfldFiles",
     format = format,
     pages = [
-        "index.md"
+       #  "index.md"
         "install.md"
         "read.md"
         "innerjoin.md"
