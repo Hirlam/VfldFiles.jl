@@ -10,7 +10,7 @@ pkg> registry add https://github.com/Hirlam/HarmonieRegistry.git
 VfldFiles can be install as  
 
 ```julia 
-pkg> add Vfldfiles
+pkg> add VfldFiles
 ```
 
 
