@@ -4,11 +4,11 @@
 ## Single file
 
 
-To read a single vobs or  vfld file (`CMEPS_prod` is a directory with test data exported by VfldFiles)
+To read a single vobs or  vfld file (`MEPS_prod` is a directory with test data exported by VfldFiles)
 
 
 ```julia
-julia> file = joinpath(CMEPS_prod,"vfldMEPS_prodmbr000201902170000")
+julia> file = joinpath(MEPS_prod,"vfldMEPS_prodmbr000201902170000")
 ```
 
 ```julia 
