@@ -1,7 +1,7 @@
 name = "VfldFiles"
 uuid = "2db2b2a4-6bcf-4003-86c8-d3c8382638cd"
 authors = ["Roel Stappers <roels@met.no>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
